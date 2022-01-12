@@ -6,8 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yulia Lavine - Portfolio</title>
-    <link rel="stylesheet" href="assets/reset.css" />
-    <link rel="stylesheet" href="./assets/style.css" />
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
 
     <title>Yulia Lavine - Portfolio</title>
 
@@ -20,7 +20,7 @@
     <header>
         <!-- Page Title -->
         <h1 class="page-title">
-            Yulia Lavine
+            YULIA LAVINE
         </h1>
         <!-- Navigation -->
         <nav>
@@ -35,38 +35,91 @@
                     <a href="#Contact-Me">Contact Me</a>
                 </li>
                 <li>
-                    <a href="#Resume">Resume</a>
+                    <a href="assets/files/Lavine-Resume.pdf">Resume</a>
                 </li>
             </ul>
         </nav>
-
     </header>
+
+    <section id="banner">
+        <h1> Junior Software QA Engineer </h1>
+    </section>
+
     <!-- Main Section includes the About Me and Work sections -->
     <main>
-        <h1>About Me</h1>
-        <p>Sugar plum shortbread shortbread bonbon marzipan apple pie marshmallow chocolate bar. Powder topping
-            liquorice marzipan liquorice icing cupcake. Cookie chocolate cake donut chocolate bar cake chupa chups. Pie
-            dessert shortbread tiramisu pie lollipop soufflé.</p>
-        <h1>Work</h1>
-        <h2>Code Refactor</h2>
-        <p>Project Description</p>
-        <h2>Project 2 Placeholder</h2>
-        <p>Project 2 Description</p>
-        <h2>Project 3 Placeholder</h2>
-        <p>Project 3 Description</p>
-        <h2>Project 4 Placeholder</h2>
-        <p>Project 4 Description</p>
-        <h2>Project 5 Placeholder</h2>
-        <p>Project 5 Description</p>
+        <!-- Section tags used to define each section -->
+        <section id="About-Me" class="left-section">
+
+            <h1 id='section-title'> About Me </h1>
+            <div class="section-content">
+                <img src="assets/images/Yulia.png" class="headshot" alt="Yulia Lavine photo" />
+
+                <p> After many years of studying Linguistics, I decided I was more interested in the Tech industry. While pursuing my Associate's Degree in Computer Science, I began working at a E-Learning company primarily doing manual software testing.
+                    Shortly after graduating, I continued software testing, this time utilizing automated software testing tools. While I do enjoy writing test scripts, I have become more interested in web development and now attend <a href="https://bootcamp.unh.edu/"
+                        target="_blank"> UNH Coding Bootcamp </a> in order to make another career shift.
+                </p>
+            </div>
+        </section>
+        <section id="Work" class="left-section">
+            <h1 id='section-title'>Work</h1>
+            <div class="work-flexbox justify-center">
+                <figure id="box">
+                    <a href="https://github.com/ilavine/code-refactoring-Horiseon">
+                        <img src="assets/images/refactor.png" alt="code-refactoring-Horiseon">
+                        <div>
+                            <h2> Code Refactor </h2>
+                            Omptimizing accessibility features HTML/CSS
+                        </div>
+                    </a>
+                </figure>
+                <figure id="box"> <img src="assets/images/image-placeholder.jpg" alt="image-placeholder">
+                    <div>
+                        <h2> Project 2 Placeholder </h2>
+                        Sugar plum shortbread shortbread
+                    </div>
+                </figure>
+                <figure id="box"> <img src="assets/images/image-placeholder.jpg" alt="image-placeholder">
+                    <div>
+                        <h2> Project 3 Placeholder </h2>
+                        Sugar plum shortbread shortbread
+                    </div>
+                </figure>
+                <figure id="box"> <img src="assets/images/image-placeholder.jpg" alt="image-placeholder">
+                    <div>
+                        <h2> Project 4 Placeholder</h2>
+                        Sugar plum shortbread shortbread
+                    </div>
+                </figure>
+                <figure id="box"> <img src="assets/images/image-placeholder.jpg" alt="image-placeholder">
+                    <div>
+                        <h2> Project 2 Placeholder </h2>
+                        Sugar plum shortbread shortbread
+                    </div>
+                </figure>
+
+
+        </section>
     </main>
-    <!-- Footer includes contact information -->
-    <footer>
-        <h1>Contact Me</h1>
-        <p><a href="mailto:iuliia.lavine@gmail.com">iuliia.lavine@gmail.com</a></p>
-        <p><a href="tel:+17814281989">(781) 428-1989</a></p>
-        <p><a href="https://github.com/ilavine">GitHub</a></p>
-        <p><a href="https://www.linkedin.com/in/iuliia-lavine/">LinkedIn</a></p>
-    </footer>
+    <!-- Section includes contact information -->
+    <section id="Contact-Me" class="left-section">
+        <h1 id='section-title'>Contact Me</h1>
+        <div class="section-content">
+            <ul>
+                <li>
+                    <a href="mailto: iuliia.lavine@gmail.com">iuliia.lavine@gmail.com </a>
+                </li>
+                <li>
+                    <a href="tel:+17814281989 ">(781) 428-1989</a>
+                </li>
+                <li>
+                    <a href="https://github.com/ilavine " target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/iuliia-lavine/" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </section>
 
 </body>
 

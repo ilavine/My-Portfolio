@@ -1,0 +1,218 @@
+/* Color scheme */
+
+:root {
+    --spindle: #A8C1E6;
+    --martin: #333046;
+    --background: white;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--background);
+}
+
+
+/* Header Styling */
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: var(--spindle);
+    color: var(--martin);
+}
+
+header h1 {
+    font-size: 30px;
+    margin: 5px 0px 10px 0px;
+    padding: 5px 5px 0px 50px;
+    background-color: var(--martin);
+    color: var(--background);
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+header nav ul {
+    margin: 0px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+header nav ul li a {
+    margin: 13px 13px 10px 13px;
+    padding: 0px 5px;
+    font-size: 25px;
+    transition: 0.2;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--martin);
+}
+
+header a:hover {
+    background-color: var(--background);
+    opacity: 60%);
+    box-shadow: 5px 5px 0px var(--martin);
+    opacity: 60%);
+    top: -2px;
+    left: -2px;
+}
+
+
+/* This section styles banner */
+
+#banner {
+    background-image: url(../images/banner.jpg);
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#banner h1 {
+    color: var(--martin);
+    position: absolute;
+    font-size: 25px;
+    bottom: 12px;
+    right: 40px;
+    padding: 5px;
+}
+
+.left-section {
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 20px 0px;
+}
+
+#section-title {
+    color: var(--martin);
+    font-size: 30px;
+    text-align: right;
+    flex: 0 0 200px;
+    margin: 0 10px 0 20px;
+    border-right: 3px solid var(--martin);
+    padding: 0 10px;
+}
+
+.section-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin: 10px 80px 10px 30px;
+}
+
+#About-Me .section-content {
+    display: initial;
+}
+
+#About-Me img {
+    float: left;
+    min-width: 150px;
+    width: 20%;
+    max-width: 300px;
+    padding: 5px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--martin);
+}
+
+#About-Me p {
+    padding: 5px;
+    color: var(--martin);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.work-flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#box {
+    padding: 5px;
+    margin: 1%;
+    position: relative;
+    width: 48%;
+    height: 40;
+    background-color: var(--spindle);
+}
+
+#box:first-child {
+    width: 100%;
+}
+
+#box img {
+    width: 100%;
+    height: 100%;
+    transition: 0.2s;
+}
+
+#box img:hover {
+    transform: scale(0.99);
+}
+
+#box div {
+    position: absolute;
+    color: var(--martin);
+    bottom: 25px;
+    background-color: var(--spindle);
+    padding: 5px;
+}
+
+#Contact-Me ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    width: 100%;
+}
+
+#Contact-Me ul li a {
+    text-decoration: none;
+    color: var(--martin);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#Contact-Me ul li a:hover {
+    text-decoration: underline;
+}
+
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+
+@media screen and (max-width: 600px) {
+    .work-flexbox,
+    header ul,
+    #Contact-Me ul {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div {
+        font-size: 5%;
+    }
+}

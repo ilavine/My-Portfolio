@@ -232,3 +232,9 @@ header a:hover {
         font-size: 5%;
     }
 }
+/* Get rid of the left section when the screen becomes smaller than 600px */
+@media screen and (max-width: 600px) {
+    h1#section-title {
+        display: none;
+    }
+}

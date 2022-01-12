@@ -26,6 +26,7 @@ header {
     background: var(--spindle);
     color: var(--martin);
 }
+
 /*  Styles header h1 tag */
 header h1 {
     font-size: 30px;
@@ -34,12 +35,14 @@ header h1 {
     background-color: var(--martin);
     color: var(--background);
 }
+
 /* Layouts header navbar */
 header nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
+
 /*  Styles header navbar list */
 header nav ul {
     margin: 0px 50px;
@@ -61,11 +64,13 @@ header nav ul li a {
     font-size: 25px;
     transition: 0.2;
 }
+
 /* Removes underscore from links */
 header a {
     text-decoration: none;
     color: var(--martin);
 }
+
 /* Adds animation on hover */
 header a:hover {
     background-color: var(--background);
@@ -85,6 +90,7 @@ header a:hover {
     background-position: center;
     position: relative;
 }
+
 /* Styles header sticker */
 #banner h1 {
     color: var(--martin);
@@ -94,6 +100,7 @@ header a:hover {
     right: 40px;
     padding: 5px;
 }
+
 /* Layouts the left section */
 .left-section {
     display: flex;
@@ -118,10 +125,12 @@ header a:hover {
     width: 100%;
     margin: 10px 80px 10px 30px;
 }
+
 /* Layouts about me section */
 #About-Me .section-content {
     display: initial;
 }
+
 /* Layouts the headshot */
 #About-Me img {
     float: left;
@@ -140,6 +149,7 @@ header a:hover {
     font-weight: 500;
     font-size: 18px;
 }
+
 /* Layouts project boxes */
 .work-flexbox {
     display: flex;
@@ -155,6 +165,7 @@ header a:hover {
     height: 40;
     background-color: var(--spindle);
 }
+
 /* Sets the first project box to the largest width */
 #box:first-child {
     width: 100%;
@@ -165,10 +176,12 @@ header a:hover {
     height: 100%;
     transition: 0.2s;
 }
+
 /* Adds animation on hover */
 #box img:hover {
     transform: scale(0.99);
 }
+
 /* Adds styling to text */
 #box div {
     position: absolute;
@@ -177,6 +190,7 @@ header a:hover {
     background-color: var(--spindle);
     padding: 5px;
 }
+
 /* Layouts contacts list */
 #Contact-Me ul {
     display: flex;
@@ -186,6 +200,7 @@ header a:hover {
     list-style: none;
     width: 100%;
 }
+
 /* Adds styling to list links */
 #Contact-Me ul li a {
     text-decoration: none;
@@ -193,6 +208,7 @@ header a:hover {
     font-size: 30px;
     font-weight: bold;
 }
+
 /* Adds animation on hover */
 #Contact-Me ul li a:hover {
     text-decoration: underline;
@@ -202,12 +218,14 @@ header a:hover {
 /* Makes flexboxes stack on top of each other when the screen becomes smaller than 600px */
 
 @media screen and (max-width: 600px) {
+
     .work-flexbox,
     header ul,
     #Contact-Me ul {
         flex-direction: column;
     }
 }
+
 /* Minimizes font size when the screen becomes smaller than 600px */
 @media screen and (max-width: 600px) {
     div {

@@ -3,7 +3,7 @@
 ## Summary
 This portfolio project was created as a part of homework assignment for UNH Coding Bootcamp. 
 
-The project could be viewed at [portfolio] (https://ilavine.github.io/My-Portfolio/)
+The project could be viewed at [portfolio](https://ilavine.github.io/My-Portfolio/)
 
 
 
